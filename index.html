@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feven Yadessa - Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+    
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Feven Yadessa</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="elevator-pitch.html">Elevator Pitch</a></li>
+                </ul>
+                <div class="theme-selector">
+                    <button class="theme-btn" onclick="setTheme('blue')" data-theme="blue" title="Blue Theme">
+                        <span class="theme-color" style="background: #2563eb;"></span>
+                    </button>
+                    <button class="theme-btn" onclick="setTheme('green')" data-theme="green" title="Green Theme">
+                        <span class="theme-color" style="background: #059669;"></span>
+                    </button>
+                    <button class="theme-btn" onclick="setTheme('purple')" data-theme="purple" title="Purple Theme">
+                        <span class="theme-color" style="background: #7c3aed;"></span>
+                    </button>
+                    <button class="theme-btn" onclick="setTheme('orange')" data-theme="orange" title="Orange Theme">
+                        <span class="theme-color" style="background: #ea580c;"></span>
+                    </button>
+                    <button class="theme-btn" onclick="setTheme('dark')" data-theme="dark" title="Dark Theme">
+                        <span class="theme-color" style="background: #1f2937;"></span>
+                    </button>
+                    <button class="theme-btn" onclick="setTheme('teal')" data-theme="teal" title="Teal Theme">
+                        <span class="theme-color" style="background: #0d9488;"></span>
+                    </button>
+                    <button class="theme-btn" onclick="setTheme('rose')" data-theme="rose" title="Rose Theme">
+                        <span class="theme-color" style="background: #e11d48;"></span>
+                    </button>
+                    <button class="theme-btn" onclick="setTheme('indigo')" data-theme="indigo" title="Indigo Theme">
+                        <span class="theme-color" style="background: #4f46e5;"></span>
+                    </button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Feven Yadessa</h1>
+                    <p class="tagline">Feven Yadessa - Software Developer | Data Analyst | Project Manager</p>
+                    <p class="intro">Welcome to my professional portfolio. I'm passionate about Software Engineering and creating innovative solutions.</p>
+                    <div class="cta-buttons">
+                        <a href="#portfolio" class="btn primary">View Portfolio</a>
+                        <a href="#bio" class="btn secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="image/g12.jpg" alt="Professional headshot" id="profile-photo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Bio Section -->
+        <section id="bio" class="bio">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="bio-content">
+                    <div class="bio-text">
+                        <p>
+                            [Replace with your most recent bio] I am a dedicated professional with experience in [your field]. 
+                            My passion lies in [your interests/specialties], and I have developed expertise in [key skills].
+                        </p>
+                        <p>
+                            Throughout my career, I have focused on [your focus areas]. I believe in [your professional philosophy] 
+                            and am committed to [your goals/mission].
+                        </p>
+                        <p>
+                            When I'm not working, I enjoy [personal interests] and am always looking for new opportunities 
+                            to learn and grow in my field.
+                        </p>
+                    </div>
+                    <div class="bio-highlights">
+                        <h3>Key Highlights</h3>
+                        <ul>
+                            <li>Experience in [specific area]</li>
+                            <li>Proficient in [technologies/tools]</li>
+                            <li>Strong background in [relevant field]</li>
+                            <li>Collaborative team player</li>
+                            <li>Continuous learner</li>
+                            <li>Problem-solving expertise</li>
+                            <li>Excellent communication skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <p class="section-intro">Explore my recent projects and accomplishments.</p>
+                
+                <div class="portfolio-grid">
+                    <div class="portfolio-item featured">
+                        <h3>Phase 2 Team Project</h3>
+                        <p>Our collaborative team project showcasing [brief description of project].</p>
+                        <div class="project-links">
+                            <a href="https://youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" class="btn primary">
+                                📺 Watch Project Video
+                            </a>
+                            <a href="path/to/your-phase2-slides.pdf" target="_blank" class="btn secondary">
+                                📄 View Slide Deck (PDF)
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item">
+                        <h3>Additional Project 1</h3>
+                        <p>Description of another project or accomplishment you'd like to showcase.</p>
+                        <a href="#" class="btn secondary">Learn More</a>
+                    </div>
+                    
+                    <div class="portfolio-item">
+                        <h3>Additional Project 2</h3>
+                        <p>Description of another project or accomplishment you'd like to showcase.</p>
+                        <a href="#" class="btn secondary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-cta">
+                    <p>Want to see more of my work?</p>
+                    <a href="path/to/complete-portfolio.pdf" target="_blank" class="btn primary">Download Complete Portfolio (PDF)</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Your Name</h3>
+                    <p>Professional tagline or brief description</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#bio">Bio</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="elevator-pitch.html">Elevator Pitch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Email: your.email@example.com</p>
+                    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Your Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" title="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
